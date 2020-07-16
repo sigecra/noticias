@@ -66,9 +66,9 @@
 
 <body>
     <div class="content">
-        <p>Venezuela</p>
+        <h1>Noticias Venezuela</h1>
         @foreach ($registros as $registro)
-        <h5 class="top-right">Fecha: {{ $registro[0] }} </h5>
+        <h5 class="top-right">Fecha: {{ date('d/m/Y', strtotime($registro[0]))  }} </h5>
         <div class="title ">
             Titular: {{ $registro[3] }}
         </div>
